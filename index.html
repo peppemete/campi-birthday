@@ -29,13 +29,13 @@
     <script>
         var campi =document.querySelector("#campi");
         var song =document.querySelector("#song");
-        var n=0;
+       
         function campisong() {
             song.play()
-            for(n=0;n<100;n++){
+            
             setInterval(function() { campi.setAttribute("src","campi-2.png"); }, 500);
             setInterval(function() { campi.setAttribute("src","campi-1.png"); }, 1000);
-            }
+            
 
         }
         
