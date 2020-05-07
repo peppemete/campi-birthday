@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUGURI CAMPI</title>
+</head>
+<body>
+    <h1>TANTI AUGURI CAMPI</h1>
+    <img id="campi" src="campi-1.png" alt="">
+    <audio id="song" src="Happy.mp3" autoplay></audio>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        #campi {
+            margin: auto;
+        }
+
+    </style>
+    <script>
+        var campi =document.querySelector("#campi");
+        var song =document.querySelector("#song");
+        var n=0;
+        setInterval(function() { campi.setAttribute("src","campi-2.png"); }, 400);
+        setInterval(function() { campi.setAttribute("src","campi-1.png"); }, 800);
+        song.loop=true;
+    </script>
+</body>
+</html>
