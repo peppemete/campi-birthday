@@ -32,8 +32,10 @@
         var n=0;
         function campisong() {
             song.play()
-            setInterval(function() { campi.setAttribute("src","campi-2.png"); }, 400);
-            setInterval(function() { campi.setAttribute("src","campi-1.png"); }, 800);
+            for(n=0;n<100;n++){
+            setInterval(function() { campi.setAttribute("src","campi-2.png"); }, 500);
+            setInterval(function() { campi.setAttribute("src","campi-1.png"); }, 1000);
+            }
 
         }
         
