@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>TANTI AUGURI CAMPI</h1>
-    <button onclick="song.play()">Clicca qua</button>
+    <button onclick="campisong()">Clicca qua</button>
     <img id="campi" src="campi-1.png" alt="">
     <audio id="song" src="Happy.mp3"></audio>
     <style>
@@ -30,8 +30,14 @@
         var campi =document.querySelector("#campi");
         var song =document.querySelector("#song");
         var n=0;
-        setInterval(function() { campi.setAttribute("src","campi-2.png"); }, 400);
-        setInterval(function() { campi.setAttribute("src","campi-1.png"); }, 800);
+        function campisong() {
+            song.play()
+            setInterval(function() { campi.setAttribute("src","campi-2.png"); }, 400);
+            setInterval(function() { campi.setAttribute("src","campi-1.png"); }, 800);
+
+        }
+        
+        
         
     </script>
 </body>
