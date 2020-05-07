@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUGURI CAMPI</title>
 </head>
-<body onshow="song.play()">
+<body>
     <h1>TANTI AUGURI CAMPI</h1>
+    <button onclick="song.play()">Clicca qua</button>
     <img id="campi" src="campi-1.png" alt="">
-    <audio id="song" src="Happy.mp3" autoplay></audio>
+    <audio id="song" src="Happy.mp3"></audio>
     <style>
         body{
             display: flex;
@@ -31,7 +32,7 @@
         var n=0;
         setInterval(function() { campi.setAttribute("src","campi-2.png"); }, 400);
         setInterval(function() { campi.setAttribute("src","campi-1.png"); }, 800);
-        song.play();
+        
     </script>
 </body>
 </html>
